@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyFirstApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string userName, userZodiak, userWork;
+            int howOldUser;
+            
+            Console.Write("Как вас зовут?: ");
+            userName = Console.ReadLine();
+            Console.Write("Сколько вам лет?: ");
+            howOldUser = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\nКакой ваш знак зодиака?: ");
+            userZodiak = Console.ReadLine();
+            Console.Write("\nГде вы работаете?: ");
+            userWork = Console.ReadLine();
+
+            Console.WriteLine("Вас зовут {0}, вам {1} лет, ваш знак зодиака это {2}, и вы работаете {3}", userName, howOldUser, userZodiak, userWork);
+        }
+    }
+}
