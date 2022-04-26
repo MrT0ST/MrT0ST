@@ -10,18 +10,18 @@ namespace MyFirstApp
     {
         static void Main(string[] args)
         {
-            int value = 10;
-            float flValue = 2.35f;
+            int hp = 10;
+            float speed = 2.35f;
             double doudValue = 3.5;
-            decimal number = 1254.24166m;
+            decimal enemyPosition = 1254.24166m;
             bool isWork = true;
-            char sentense_1 = 'r';
-            var anyValue1 = 57;
-            var anyValue2 = 12.653f;
-            byte b = 4;
-            sbyte sb = 8;
-            long l = 16;
-            ulong ul = 32;
+            char firstNameLetter = 'r';
+            var applesAmount = 57;
+            var jumpForce = 12.653f;
+            byte userPassword = 4;
+            sbyte foodTimeAppear = 8;
+            long money = 16;
+            ulong enemyAmount = 32;
         }
     }
 }
