@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+
+namespace MyFirstApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Сколько старушек в очереди?: ");
+            int peopleInQueue = Convert.ToInt32(Console.ReadLine());
+            int usualTimeInQueue = 10;
+            int hoursInQueue = (peopleInQueue * 10) / 60 ;
+            int minutesInQueue = (peopleInQueue * 10) % 60;
+            Console.WriteLine("Вы должны простоять в очереди {0} часа {1} минут", hoursInQueue, minutesInQueue);
+            Console.ReadKey();
+        }
+    }
+}
