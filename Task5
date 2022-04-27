@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyFirstApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Напишите ваше имя: ");
+            string surName = Console.ReadLine();
+            Console.Write("\nНапишите вашу фамилию: ");
+            string firstName = Console.ReadLine();
+
+            Console.Write("\nЗдраствуйте {0} {1}", surName, firstName);
+            Console.Write("\nОй..");
+
+            string swap;
+
+            swap = firstName;
+            firstName = surName;
+            surName = swap;
+
+            Console.Write("\nЗдраствуйте {0} {1}", surName, firstName);
+        }
+    }
+}
