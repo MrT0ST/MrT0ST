@@ -14,9 +14,9 @@ namespace MyFirstApp
             Console.Write("Сколько старушек в очереди?: ");
             int peopleInQueue = Convert.ToInt32(Console.ReadLine());
             int usualTimeInQueue = 10;
-            int minutes = 60;
-            int hoursInQueue = (peopleInQueue * usualTimeInQueue) / minutes ;
-            int minutesInQueue = (peopleInQueue * usualTimeInQueue) % minutes;
+            int minutesInHour = 60;
+            int hoursInQueue = (peopleInQueue * usualTimeInQueue) / minutesInHour;
+            int minutesInQueue = (peopleInQueue * usualTimeInQueue) % minutesInHour;
             Console.WriteLine("Вы должны простоять в очереди {0} часа {1} минут", hoursInQueue, minutesInQueue);
             Console.ReadKey();
         }
