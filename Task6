@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyFirstApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int imageAmount = 52;
+            int imageInRow = 3;
+            
+            int fullRows = imageAmount / imageInRow;
+            int imagesOverNeed = imageAmount % imageInRow;
+
+            Console.WriteLine("Выведеться картинок в ряд: {0}", fullRows);
+            Console.WriteLine("Количество лишних картинок: {0}", imagesOverNeed);
+
+            Console.ReadKey();
+        }
+    }
+}
