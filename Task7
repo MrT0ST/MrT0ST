@@ -16,6 +16,8 @@ namespace MyFirstApp
             int userCristal = 0;
             int cristalCost = 3;
             Console.WriteLine("В нашем магазине кристалы по цене {0} за штуку", cristalCost);
+            Console.Write("\nСколько кристалов вы хотите купить?: ");
+            int cristalWantBuy = Convert.ToInt32(Console.ReadLine());
             Thread.Sleep(1000);
             Console.WriteLine("---");
             Console.WriteLine("Ваше золото: {0}", userGold);
@@ -25,8 +27,9 @@ namespace MyFirstApp
             Console.WriteLine("*Покупаем кристалы*");
             Thread.Sleep(1000);
 
-            userCristal = userGold / cristalCost;
-            userGold = userGold % cristalCost;
+            int totalPrice = cristalWantBuy * cristalCost;
+            userCristal += cristalWantBuy;
+            userGold = userGold - totalPrice;
             Console.WriteLine("Поздравляем, вы приобрили {0} кристалов и у вас осталось {1} золота", userCristal, userGold);
             Console.ReadKey();
         }
